@@ -1,0 +1,21 @@
+{
+  "name": "sleepgame",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test:terminal": "node --experimental-strip-types --test tests/terminal.test.ts",
+    "verify:dev": "bash scripts/verify-server.sh dev",
+    "verify:prod": "bash scripts/verify-server.sh prod"
+  },
+  "dependencies": {
+    "nuxt": "^4.6.2"
+  }
+}
